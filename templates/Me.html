@@ -4,18 +4,18 @@
 <head>
   <style type="text/css"></style>
   <title>Wizytówka</title>
-  <link rel="stylesheet" href="https://drive.google.com/file/d/1JKrO4bwbJKgd5u7ZTC7gVOzL9YgzKCNK/view?usp=share_link">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">">
 </head>
   {% endblock %}
 <body>
   
-<h1>Witaj na mojej sronie domowej</h1>
+<h1>Witaj na mojej stronie domowej</h1>
   <img src="https://media.licdn.com/dms/image/C5603AQHd4pKJ8bqnvA/profile-displayphoto-shrink_800_800/0/1567113815735?e=2147483647&amp;v=beta&amp;t=i_usNJMOCsMxQX6b_m63GmiZYdyYmntvqXgJQDUkwMM" width="150" height="150" alt="" title="Code">
  
 <h2>O mnie</h2>
   <p><strong>imię:</strong> Karol</p>
-  <p><strong>nazwisko:</strong> Żyłka</p>&gt;
-
- <a href="https://drive.google.com/file/d/1cMOzzl8F8WjyWTLllkN7zdW_9RwMGTOc/view?usp=sharing">Rozwiń kontakt</a>
-
+  <p><strong>nazwisko:</strong> Żyłka</p>
+<h3>
+<a href="{{ url_for('contact') }}">Rozwiń kontakt</a>
+</h3>
  <div id="content"> {% block content %}{% endblock %} </div>
